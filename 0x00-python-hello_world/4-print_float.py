@@ -1,4 +1,4 @@
 #!/usr/bin/python3
 number = 3.14159
-rnd = round(number, 2)
-print(f"Float: 3.14")
+number = round(number, 2)
+print(f"Float: {number}")
