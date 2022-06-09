@@ -9,7 +9,7 @@ def square_matrix_simple(matrix=[]):
         d = []
         for b in range(col):
             d.append(matrix[a][b] ** 2)
-            b += 1
+            b = b + 1
         a = a + 1
         c.append(d)
     return c
