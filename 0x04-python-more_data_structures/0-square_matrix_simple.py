@@ -6,7 +6,7 @@ def square_matrix_simple(matrix=[]):
     row = len(matrix)
     col = len(matrix[0])
     for a in range(row):
-        d=[]
+        d = []
         for b in range(col):
             d.append(matrix[a][b] ** 2)
             b += 1
