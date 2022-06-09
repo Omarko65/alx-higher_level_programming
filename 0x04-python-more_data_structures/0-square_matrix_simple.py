@@ -3,9 +3,11 @@ def square_matrix_simple(matrix=[]):
     a = 0
     b = 0
     c = []
-    for a in range(3):
+    row = len(matrix)
+    col = len(matrix[0])
+    for a in range(row):
         d=[]
-        for b in range(3):
+        for b in range(col):
             d.append(matrix[a][b] ** 2)
             b += 1
         a = a + 1
