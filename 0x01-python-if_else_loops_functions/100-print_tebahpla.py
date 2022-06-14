@@ -1,3 +1,6 @@
 #!/usr/bin/python3
-for ch in reversed(range(97, 123)):
-    print("{:c}".format(ch if (ch % 2 == 0) else (ch - 32)), end='')
+for a in range(122, 96, -1):
+    if a % 2 != 0:
+        print("{:c}".format(a - 32), end='')
+    else:
+        print("{:c}".format(a), end='')
