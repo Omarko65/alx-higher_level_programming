@@ -13,4 +13,3 @@ def square_matrix_simple(matrix=[]):
         a = a + 1
         c.append(d)
     return c
-
