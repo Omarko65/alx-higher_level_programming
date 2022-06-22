@@ -3,6 +3,8 @@
 Module 1-square
 Define class Square with private attribute
 """
+
+
 class Square:
     '''
     Class square with private size attribute
