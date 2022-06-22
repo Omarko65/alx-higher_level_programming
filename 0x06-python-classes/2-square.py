@@ -15,4 +15,4 @@ class Square:
             else:
                 raise TypeError("size must be >= 0")
         else:
-            raise TypeError("sise must be an integer")
+            raise TypeError("size must be an integer")
