@@ -4,7 +4,6 @@ Module 5-square
 class square module which has different classes
 '''
 
-
 class Square:
     '''class square is initialized here'''
 
@@ -31,7 +30,7 @@ class Square:
     def my_print(self):
         if self.__size == 0:
             print()
-        
+
         else:
             for i in range(self.__size):
                 for j in range(self.__size):
