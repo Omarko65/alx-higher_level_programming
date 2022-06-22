@@ -4,11 +4,9 @@ Module 5-square
 class square module which has different classes
 '''
 
-class Square:
-    '''
-    class square is initialized here
-    '''
 
+class Square:
+    '''class square is initialized here'''
     def __init__(self, size=0):
         self.size = size
 
@@ -28,13 +26,12 @@ class Square:
 
     def area(self):
         return self.__size * self.__size
-    
+
     def my_print(self):
         if self.__size == 0:
-            print()
-
+            print("")
         else:
             for i in range(self.__size):
                 for j in range(self.__size):
                     print("#", end = "")
-                print()
+                print("")
