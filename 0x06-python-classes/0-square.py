@@ -2,7 +2,7 @@
 """
 Module 0-square
 Define empy Class Square
-""" 
+"""
 
 
 class Square:
