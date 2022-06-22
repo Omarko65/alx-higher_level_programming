@@ -2,6 +2,7 @@
 """
 Module 1-square
 Define class Square with private attribute
+
 """
 class Square:
     '''
