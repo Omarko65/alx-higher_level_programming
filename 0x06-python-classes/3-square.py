@@ -13,7 +13,6 @@ class Square:
         size (int): size of the square
         area (int): area of the square
     '''
-    
 
     def __init__(self, size=0):
         if isinstance(size, int):
@@ -30,6 +29,5 @@ class Square:
     Return: the area of the circle
     '''
     
-
     def area(self):
         return self.__size ** 2
