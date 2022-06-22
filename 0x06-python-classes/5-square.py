@@ -5,7 +5,9 @@ class square module which has different classes
 '''
 
 class Square:
-    '''class square is initialized here'''
+    '''
+    class square is initialized here
+    '''
 
     def __init__(self, size=0):
         self.size = size
