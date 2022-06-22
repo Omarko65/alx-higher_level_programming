@@ -9,5 +9,6 @@ class Square:
     Args:
         __size: private size attribute
     '''
+
     def __init__(self, __size):
         self.__size = __size
