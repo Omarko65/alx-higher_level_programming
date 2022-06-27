@@ -43,13 +43,16 @@ class Rectangle:
     def __str__(self):
         myprint = ""
         count = 1
+        
         if self.__height == 0 and self.__width == 0:
             return myprint
 
         for i in range(self.__height):
+            
             for j in range(self.__width):
                 myprint += '#'
             if count < self.__height:
                 myprint += "\n"
                 count += 1
-        return myprint
+        
+        return myprinti
