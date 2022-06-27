@@ -49,7 +49,7 @@ class Rectangle:
         else:
             for i in range(self.__height):
                 for j in range(self.__width):
-                    myprint += '#'
+                    myprint += "#"
                 if count < self.__height:
                     myprint += "\n"
                     count += 1
