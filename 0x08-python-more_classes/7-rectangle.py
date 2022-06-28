@@ -6,6 +6,7 @@ class Rectangle:
     '''class rectangle initalization'''
     number_of_instances = 0
     print_symbol = "#"
+
     def __init__(self, width=0, height=0):
         self.width = width
         self.height = height
@@ -46,9 +47,9 @@ class Rectangle:
     def __str__(self):
         myprint = ""
         count = 1
-        if self.__height == 0 and self.__width == 0:
+        if self.__height == 0 or self.__width == 0:
             return myprint
- 
+
         else:
             for i in range(self.__height):
                 for j in range(self.__width):
@@ -60,7 +61,7 @@ class Rectangle:
 
     '''repr initialization that returns rectangle with #'''
     def __repr__(self):
-        return "Rectangle(" + str(self.__width) + ', ' + str(self.__height) + ')'
+        return "Rectangle("+str(self.__width)+', '+str(self.__height)+')'
 
     '''del method definition'''
     def __del__(self):
