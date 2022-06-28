@@ -43,7 +43,7 @@ class Rectangle:
     def __str__(self):
         myprint = ""
         count = 1
-        if self.__height == 0 and self.__width == 0:
+        if self.__height == 0 or self.__width == 0:
             return myprint
         else:
             for i in range(self.__height):
