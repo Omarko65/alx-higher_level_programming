@@ -45,7 +45,7 @@ class Rectangle:
         count = 1
         if self.__height == 0 and self.__width == 0:
             return myprint
- 
+
         else:
             for i in range(self.__height):
                 for j in range(self.__width):
@@ -57,4 +57,4 @@ class Rectangle:
 
     '''repr initialization that returns rectangle with #'''
     def __repr__(self):
-        return "Rectangle(" + str(self.__width) + ', ' + str(self.__height) + ')'
+        return "Rectangle("+str(self.__width) +', '+str(self.__height)+')'
