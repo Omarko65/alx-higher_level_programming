@@ -1,13 +1,10 @@
 #!/usr/bin/python3
-copy_list = __import__('19-copy_list').copy_list
+LockedClass = __import__('101-locked_class').LockedClass
 
-my_list = [1, 2, 3]
-print(my_list)
+lc = LockedClass()
+lc.first_name = "John"
+try:
+    lc.last_name = "Snow"
+except Exception as e:
+    print("[{}] {}".format(e.__class__.__name__, e))
 
-new_list = copy_list(my_list)
-
-print(my_list)
-print(new_list)
-
-print(new_list == my_list)
-print(new_list is my_list)
