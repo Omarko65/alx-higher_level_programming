@@ -19,12 +19,15 @@ def matrix_divided(matrix, div):
 
     if type(matrix) not in [list]:
         raise TypeError("matrix must be a matrix (list of lists) of integers/floats")
+    if len(matrix) > 1:
+        if type(matrix[i]) not in [list] or type(matrix[i + 1]) not in [list]:
+            raise TypeError("matrix must be a matrix (list of lists) of integers/floats")
 
-    if type(matrix[i]) not in [list] or type(matrix[i + 1]) not in [list]:
-        raise TypeError("_matrix must be a matrix (list of lists) of integers/floats")
-
-    if len(matrix[i]) != len(matrix[i + 1]):
-        raise TypeError("Each row of the matrix must have the same size")
+        if len(matrix[i]) != len(matrix[i + 1]):
+            raise TypeError("Each row of the matrix must have the same size")
+    else:
+        if type(matrix[i]) not in [list]:
+                raise TypeError("matrix must be a matrix (list of lists) or integers/floats")
 
     for a in range(row):
         d = []
