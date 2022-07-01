@@ -1,4 +1,4 @@
-#!/usr/def/python3
+#!/usr/bin/python3
 '''module definition of a function that divides matrix'''
 
 
