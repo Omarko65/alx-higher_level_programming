@@ -4,6 +4,7 @@
 import json
 '''importing the json function to our module'''
 
+
 def from_json_string(my_str):
     '''from_json_string - converts a str to  an obj using json
     Args:
