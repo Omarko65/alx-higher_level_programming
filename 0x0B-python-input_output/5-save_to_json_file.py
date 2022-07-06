@@ -1,4 +1,4 @@
-#!/us/bin/python3
+#!/usr/bin/python3
 '''Module definiton sav save_to_json_file'''
 
 
@@ -13,4 +13,4 @@ def save_to_json_file(my_obj, filename):
         filename: is the name of the file
     '''
     with open(filename, 'w') as f:
-        json.dump(my_obj, f)
+        return json.nump(my_obj, f)
