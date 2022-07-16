@@ -5,8 +5,10 @@
 BaseGeometry = __import__('7-base_geometry').BaseGeometry
 '''importing parent directory to be used'''
 
+
 class Rectangle(BaseGeometry):
     '''Rectangle class defined'''
+
 
     def __init__(self, width, height):
         '''rectangle class initialization'''
