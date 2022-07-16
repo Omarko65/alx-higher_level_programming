@@ -19,9 +19,7 @@ class Rectangle(BaseGeometry):
 
     def area(self):
         '''implementing area method'''
-
         return self.__width * self.__height
-
 
     def __str__(self):
         '''initializing the str method'''
