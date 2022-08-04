@@ -81,7 +81,9 @@ class Rectangle(Base):
         '''method that displays the rectangle'''
         i = self.__height
         j = self.__width
+        [print("") for d in range(self.__y)]
         for s in range(i):
+            print(" " * self.__x, end="")
             for k in range(j):
                 print("#", end="")
             print()
