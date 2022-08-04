@@ -8,7 +8,7 @@ class Base:
 
     def __init__(self, id=None):
         '''initalization of class'''
- 
+
         if id is not None:
             self.id = id
         else:
