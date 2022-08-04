@@ -94,7 +94,7 @@ class Rectangle(Base):
                 type(self).__name__, self.id, self.__x, self.__y,
                 self.__width, self.__height)
 
-    def update(self, *args):
+    def update(self, *args, **kwargs):
         '''update module that initalize the class without init'''
         count = 0
         for arg in args:
@@ -112,3 +112,19 @@ class Rectangle(Base):
             elif count == 4:
                 self.y = arg
             count += 1
+
+        for key, value in kwargs.items():
+            temp = ["id", "width", "height", "x", "y"]
+            if key in temp and temp.index(key) >= count:
+                if key == temp[0]:
+                    if value is None:
+                        self.__init__(self.width, self.height, self.x, self.y)
+                    self.id = value
+                elif key == temp[1]:
+                    self.width = value
+                elif key == temp[2]:
+                    self.height = value
+                elif key == temp[3]:
+                    self.x = value
+                elif key == temp[4]:
+                    self.y = value
