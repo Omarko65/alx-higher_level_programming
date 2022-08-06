@@ -26,7 +26,7 @@ class Base:
     @classmethod
     def save_to_file(cls, list_objs):
         '''method that save repr of list with json'''
-        filename = cls.__name__ +".json"
+        filename = cls.__name__ + ".json"
         with open(filename, "w") as f:
             if list_objs is None:
                 f.write("[]")
