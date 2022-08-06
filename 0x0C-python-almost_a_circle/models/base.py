@@ -1,8 +1,7 @@
 #!/usr/bin/python3
 '''module definition for base class'''
 import json
-import csv
-import turtle
+
 
 class Base:
     '''class initialization of base'''
@@ -46,10 +45,7 @@ class Base:
     @classmethod
     def create(cls, **dictionary):
         '''method that returns a list of instances'''
-       polygons = {
-            'Rectangle': (1, 1, 0, 0),
-            'Square': (1, 0, 0, None)
-        }
+        polygons = {'Rectangle': (1, 1, 0, 0), 'Square': (1, 0, 0, None)}
         if cls.__name__ in polygons.keys():
             polygon = cls(*polygons[cls.__name__])
             polygon.update(**dictionary)
