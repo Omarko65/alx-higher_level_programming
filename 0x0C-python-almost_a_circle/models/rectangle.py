@@ -130,6 +130,7 @@ class Rectangle(Base):
                     self.y = value
 
     def to_dictionary(self):
+        '''method that returns dictionary of class'''
         return {
                 "id" : self.id,
                 "width" : self.width,

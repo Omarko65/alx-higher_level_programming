@@ -37,6 +37,7 @@ class Square(Rectangle):
                     setattr(self, key, val)
 
     def to_dictionary(self):
+        '''method that returns dict of class'''
         return {
                 "id" : self.id,
                 "size" : self.size
