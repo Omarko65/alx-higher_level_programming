@@ -60,4 +60,4 @@ class Base:
                 list_instances = cls.from_json_string(f.read())
                 return [cls.create(**d) for d in list_instances]
         except IOError:
-            return []        
+            return []
