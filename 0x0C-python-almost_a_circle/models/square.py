@@ -1,5 +1,7 @@
 #!/usr/bin/python3
 '''square class module'''
+
+
 from models.rectangle import Rectangle
 '''importing the rectangle module'''
 
@@ -23,4 +25,5 @@ class Square(Rectangle):
 
     def __str__(self):
         '''str initialization of class'''
-        return "[{}] ({}) {}/{} - {}".format(type(self).__name__, self.id, self.x, self.y, self.width)
+        return "[{}] ({}) {}/{} - {}".format(type(self).__name__,
+                self.id, self.x, self.y, self.width)
