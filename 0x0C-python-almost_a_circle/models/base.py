@@ -41,3 +41,26 @@ class Base:
             return []
         else:
             return json.loads(json_string)
+
+    @classmethod
+    def create(cls, **dictionary):
+        '''method that returns a list of instances'''
+       polygons = {
+            'Rectangle': (1, 1, 0, 0),
+            'Square': (1, 0, 0, None)
+        }
+        if cls.__name__ in polygons.keys():
+            polygon = cls(*polygons[cls.__name__])
+            polygon.update(**dictionary)
+            return polygon
+
+    @classmethod
+    def load_from_file(cls):
+        """returns a list of instances"""
+        filename = cls.__name__ + ".json"
+        try:
+            with open(filename, encoding="utf-8") as f:
+                list_instances = cls.from_json_string(f.read())
+                return [cls.create(**d) for d in list_instances]
+        except IOError:
+            return []        
