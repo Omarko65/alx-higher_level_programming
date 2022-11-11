@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 ''' a python script that sends a post request to a url'''
-import urllib
+import urllib.parse
+import urllib.request
 import sys
 
 
