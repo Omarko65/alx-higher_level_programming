@@ -8,5 +8,5 @@ if __name__ == '__main__':
     url = sys.argv[1]
     e_address = sys.argv[2]
     mail = {'email': e_address}
-    r = requests.post(url, data= mail)
+    r = requests.post(url, data=mail)
     print(r.text)
