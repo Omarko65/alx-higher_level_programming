@@ -1,16 +1,17 @@
 #!/usr/bin/python3
-''' a scrip that list 10most recents commits from a repo'''
-import sys
+''' a pythn script that returns the last 10 commits in a repo'''
 import requests
+import sys
 
 
-if __name__ == ' __main__':
-    url = 'https://api.github.com/repos/{}/{}/commits'.format(
-            sys.argv[2], sys.argv[1])
+if __name__ == '__main__':
+    user = sys.argv[1]
+    repo = sys.argv[2]
+    url = "https://api.github.com/repos/{}/{}/commits".format(user, repo)
     r = requests.get(url)
-    commit = r.json()
+    resp = r.json()
     try:
         for i in range(10):
-            print(f"{commits[i]['sha']}: {commits[i]['commit']['author']['name']}")
+            print(f"{resp[i]['sha']}: {resp[i]['commit']['author']['name']}")
     except IndexError:
         pass
