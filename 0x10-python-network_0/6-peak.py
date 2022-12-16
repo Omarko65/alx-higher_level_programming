@@ -4,15 +4,16 @@
 
 def find_peak(list_of_integers):
     '''module definition of find_peak'''
-    if len(list_of_integers) == []:
+    size = len(list_of_integers)
+    if size == []:
         return None
 
-    if len(list_of_integers) == 1:
+    if size == 1:
         return list_of_integers[0]
-    elif len(list_of_integers) == 2:
+    elif size == 2:
         return max(list_of_integers)
 
-    mid = int(len(list_of_integers) / 2)
+    mid = int(size / 2)
     peak = list_of_integers[mid]
 
     if peak > list_of_integers[mid + 1] and peak > list_of_integers[mid - 1]:
