@@ -5,7 +5,7 @@ import urllib.request
 
 if __name__ == "__main__":
     ''' module to fetch url '''
-    url = 'http://0.0.0.0:5050/status'
+    url = http://0.0.0.0:5050/status
     req = urllib.request.Request(url)
     with urllib.request.urlopen(req) as response:
         the_page = response.read()
