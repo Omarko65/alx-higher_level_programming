@@ -3,7 +3,8 @@
 import urllib.request
 
 
-if __name__ =='__main__':
+if __name__ == '__main__':
+    '''script definition'''
     url = 'https://alx-intranet.hbtn.io/status'
     req = urllib.request.Request(url)
     with urllib.request.urlopen(req) as response:
