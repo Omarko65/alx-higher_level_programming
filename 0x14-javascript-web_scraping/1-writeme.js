@@ -9,9 +9,7 @@ if (filepath && content) {
   fs.writeFile(filepath, content, 'utf8', (err) => {
     if (err) {
       console.error(err);
-      return;
     }
-   // console.log('');
   });
 } else {
   console.log('No file path passed');
