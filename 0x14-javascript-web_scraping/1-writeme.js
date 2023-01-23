@@ -11,7 +11,7 @@ if (filepath && content) {
       console.error(err);
       return;
     }
-    console.log('');
+   // console.log('');
   });
 } else {
   console.log('No file path passed');
