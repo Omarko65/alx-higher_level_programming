@@ -8,9 +8,10 @@ const fs = require('fs');
 if (filepath && content) {
   fs.writeFile(filepath, content, 'utf8', (err) => {
     if (err) {
-      console.log(err);
+      console.error(err);
       return;
     }
     console.log('');
   });
-}
+} else {
+  console.log('No file path passed')
